@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/conversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/underBar" />
+
+    <LinearLayout
+        android:id="@+id/underBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/montserrat"
+            android:hint="입력하세요."
+            android:imeActionId="4"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#606060"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/button_send"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/send"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
