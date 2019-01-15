@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/set_user_name"
+        android:title="Set your name" />
+
+    <item android:id="@+id/set_end_word"
+        android:title="Set finishing word"/>
+
+    <item android:id="@+id/set_time"
+        android:title="Set alarm"/>
+
+
+</menu>
